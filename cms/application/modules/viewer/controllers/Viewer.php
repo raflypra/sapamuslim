@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Host extends CI_Controller {
+class Viewer extends CI_Controller {
 
-	private $title         	= 'Host';
-	private $prefix         = 'host';
-    private $table_db       = 'host';
+	private $title         	= 'Viewer';
+	private $prefix         = 'viewer';
+    private $table_db       = 'user';
 
 	function __construct() {
         parent::__construct();
@@ -136,7 +136,7 @@ class Host extends CI_Controller {
 
 	public function change_status( $id, $status )
     {
-        $result = $this->m_global->update( $this->table_db, ['active' => $status], [strEncrypt('host_id', true) => $id]);
+        $result = $this->m_global->update( $this->table_db, ['active' => $status], [strEncrypt('user_id', true) => $id]);
 
         if ( $result )
         {
