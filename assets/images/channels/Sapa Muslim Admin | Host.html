@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	  	<title>Sapa Muslim Admin | Host</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<link rel="stylesheet" type="text/css" href="Sapa%20Muslim%20Admin%20%7C%20Host_files/vendor.css">
+	  	<link rel="stylesheet" type="text/css" href="Sapa%20Muslim%20Admin%20%7C%20Host_files/flat-admin.css">
+
+	  	<!-- Theme -->
+	  	<link rel="stylesheet" type="text/css" href="Sapa%20Muslim%20Admin%20%7C%20Host_files/blue-sky.css">
+	  	<link rel="stylesheet" type="text/css" href="Sapa%20Muslim%20Admin%20%7C%20Host_files/blue.css">
+	  	<link rel="stylesheet" type="text/css" href="Sapa%20Muslim%20Admin%20%7C%20Host_files/red.css">
+	  	<link rel="stylesheet" type="text/css" href="Sapa%20Muslim%20Admin%20%7C%20Host_files/yellow.css">
+	  	<link rel="shortcut icon" href="http://localhost/sapamuslim/newsapamuslim/cms/assets/images/favicon.ico">
+
+	</head>
+	<body>
+	  	<div class="app app-default">
+			<aside class="app-sidebar" id="sidebar">
+			  	<div class="sidebar-header">
+			    	<a class="sidebar-brand" href="http://localhost/sapamuslim/newsapamuslim/cms/">
+			    		<img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/logo.png" class="img-responsive" height="50px">
+			    	</a>
+				    <button type="button" class="sidebar-toggle">
+				      	<i class="fa fa-times"></i>
+				    </button>
+			  	</div>
+			  	<div class="sidebar-menu">
+				    <ul class="sidebar-nav">
+				      	<li class="">
+					        <a href="http://localhost/sapamuslim/newsapamuslim/cms/dashboard">
+					          	<div class="icon">
+					            	<i class="fa fa-tasks" aria-hidden="true"></i>
+					          	</div>
+					          	<div class="title">Dashboard</div>
+					        </a>
+				      	</li>
+				      	<li class="active">
+					        <a href="http://localhost/sapamuslim/newsapamuslim/cms/host">
+					          	<div class="icon">
+					            	<i class="fa fa-video-camera" aria-hidden="true"></i>
+					          	</div>
+					          	<div class="title">Host</div>
+					        </a>
+				      	</li>
+				    </ul>
+			  	</div>
+			  	<div class="sidebar-footer">
+			    <ul class="menu">
+			      <li>
+			        <a href="http://localhost/" class="dropdown-toggle" data-toggle="dropdown">
+			          <i class="fa fa-cogs" aria-hidden="true"></i>
+			        </a>
+			      </li>
+			      <li><a href="#"><span class="flag-icon flag-icon-th flag-icon-squared"></span></a></li>
+			    </ul>
+			  	</div>
+			</aside>
+
+			<script type="text/ng-template" id="sidebar-dropdown.tpl.html">
+			  <div class="dropdown-background">
+			    <div class="bg"></div>
+			  </div>
+			  <div class="dropdown-container">
+			    {{list}}
+			  </div>
+			</script>
+			<div class="app-container">
+
+			  <nav class="navbar navbar-default" id="navbar">
+			  <div class="container-fluid">
+			    <div class="navbar-collapse collapse in">
+			      <ul class="nav navbar-nav navbar-mobile">
+			        <li>
+			          <button type="button" class="sidebar-toggle">
+			            <i class="fa fa-bars"></i>
+			          </button>
+			        </li>
+			        <li class="logo">
+			          <a class="navbar-brand" href="http://localhost/sapamuslim/newsapamuslim/cms/"><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/logo.png" class="img-responsive" height="50px"></a>
+			        </li>
+			        <li>
+			          <button type="button" class="navbar-toggle">
+			            <img class="profile-img" src="Sapa%20Muslim%20Admin%20%7C%20Host_files/profile.png">
+			          </button>
+			        </li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-left">
+			        <li class="navbar-title">Host</li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown profile">
+			          <a href="http://localhost/html/pages/profile.html" class="dropdown-toggle" data-toggle="dropdown">
+			            <img class="profile-img" src="Sapa%20Muslim%20Admin%20%7C%20Host_files/default_profile.jpg">
+			            <div class="title">Profile</div>
+			          </a>
+			          <div class="dropdown-menu">
+			            <div class="profile-info">
+			              <h4 class="username">Administrator</h4>
+			            </div>
+			            <ul class="action">
+			              <li>
+			                <a href="http://localhost/sapamuslim/newsapamuslim/cms/login/logout">
+			                  Logout
+			                </a>
+			              </li>
+			            </ul>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+				
+				<div class="row">
+  	<div class="col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                <a href="" class="btn btn-xs btn-primary"><span class="fa fa-plus"></span></a>
+            </div>
+            <div class="card-body no-padding">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="top"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input class="form-control input-sm" placeholder="Search..." aria-controls="DataTables_Table_0" type="search"></label></div><div class="dataTables_length" id="DataTables_Table_0_length"><label><select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-control input-sm"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div><div class="clear"></div></div><table class="datatable table table-striped primary dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="width: 100%;" width="100%" cellspacing="0">
+                    <thead>
+                        <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 26.8833px;" aria-sort="ascending" aria-label="No.: activate to sort column descending">No.</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 105.4px;" aria-label="Image: activate to sort column ascending">Image</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 112.217px;" aria-label="User ID: activate to sort column ascending">User ID</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 284.783px;" aria-label="Name: activate to sort column ascending">Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 57.9333px;" aria-label="Type: activate to sort column ascending">Type</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 65.4667px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 112.317px;" aria-label="Action: activate to sort column ascending">Action</th></tr>
+                    </thead>
+                    <tbody>
+                                                    
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                        <tr role="row" class="odd">
+                                <td class="sorting_1">1.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/327055623de9267cd30a17814272df66.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>host1</td>
+                                <td>Eka S. Oktalianto</td>
+                                <td>host</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/c4ca4238a0b923820dcc509a6f75849b/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/c4ca4238a0b923820dcc509a6f75849b" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/c4ca4238a0b923820dcc509a6f75849b/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="even">
+                                <td class="sorting_1">2.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/ee0f109de73dc5242729262b9d8f6186.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>UstAbduh</td>
+                                <td>Ust Abduh Tuasikal</td>
+                                <td>host</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/c81e728d9d4c2f636f067f89cc14862c/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/c81e728d9d4c2f636f067f89cc14862c" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/c81e728d9d4c2f636f067f89cc14862c/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="odd">
+                                <td class="sorting_1">3.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/1cde2b2999960ee166189790b2a01193.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>host3</td>
+                                <td>Ust. Firanda</td>
+                                <td>host</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/eccbc87e4b5ce2fe28308fd9f2a7baf3/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/eccbc87e4b5ce2fe28308fd9f2a7baf3" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/eccbc87e4b5ce2fe28308fd9f2a7baf3/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="even">
+                                <td class="sorting_1">4.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/299473f0af9ca166a64303d0f65da2c3.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>AhlusSunnah</td>
+                                <td>Ahlus Sunnah</td>
+                                <td>host</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/a87ff679a2f3e71d9181a67b7542122c/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/a87ff679a2f3e71d9181a67b7542122c" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/a87ff679a2f3e71d9181a67b7542122c/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="odd">
+                                <td class="sorting_1">5.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/52b707acbd69eee996473da66b57d72b.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>dev</td>
+                                <td>Ust. Dev</td>
+                                <td>host</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/e4da3b7fbbce2345d7772b0674a318d5/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/e4da3b7fbbce2345d7772b0674a318d5" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/e4da3b7fbbce2345d7772b0674a318d5/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="even">
+                                <td class="sorting_1">6.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/1cde2b2999960ee166189790b2a01196.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>yuvid.tv</td>
+                                <td>Yuvid TV</td>
+                                <td>youtube</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/1679091c5a880faf6fb5e6087eb1b2dc/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/1679091c5a880faf6fb5e6087eb1b2dc" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/1679091c5a880faf6fb5e6087eb1b2dc/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="odd">
+                                <td class="sorting_1">7.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/1cde2b2999960ee166189790b2a01197.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>rumaysho.com</td>
+                                <td>Rumaysho</td>
+                                <td>youtube</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/8f14e45fceea167a5a36dedd4bea2543/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/8f14e45fceea167a5a36dedd4bea2543" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/8f14e45fceea167a5a36dedd4bea2543/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="even">
+                                <td class="sorting_1">8.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/1cde2b2999960ee166189790b2a01198.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>rodja.tv</td>
+                                <td>Rodja.TV</td>
+                                <td>youtube</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/c9f0f895fb98ab9159f51fd0297e236d/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/c9f0f895fb98ab9159f51fd0297e236d" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/c9f0f895fb98ab9159f51fd0297e236d/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="odd">
+                                <td class="sorting_1">9.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/default_host.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>insan.tv</td>
+                                <td>Insan.TV</td>
+                                <td>youtube</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/45c48cce2e2d7fbdea1afc51c7c6ad26/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/45c48cce2e2d7fbdea1afc51c7c6ad26" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/45c48cce2e2d7fbdea1afc51c7c6ad26/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr><tr role="row" class="even">
+                                <td class="sorting_1">10.</td>
+                                <td><img src="Sapa%20Muslim%20Admin%20%7C%20Host_files/default_host.jpg" onerror="this.src='http://localhost/sapamuslim/newsapamuslim/cms/assets/images/default_host.jpg'" width="100px"></td>
+                                <td>AlbinaaTV</td>
+                                <td>Albinaa TV</td>
+                                <td>youtube</td>
+                                <td><span class="label label-info">Active</span></td>
+                                <td>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/d3d9446802a44259755d38e6d163e820/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/show_edit/d3d9446802a44259755d38e6d163e820" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
+                                    <a href="http://localhost/sapamuslim/newsapamuslim/cms/host/change_status/d3d9446802a44259755d38e6d163e820/99" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
+                            </tr></tbody>
+                </table><div class="bottom"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 27 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button next" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">Next</a></li></ul></div><div class="clear"></div></div></div>
+            </div>
+        </div>
+    </div>
+</div>				
+			  <!-- <footer class="app-footer"> 
+			  <div class="row">
+			    <div class="col-xs-12">
+			      <div class="footer-copyright">
+			        Copyright © 2016 Company Co,Ltd.
+			      </div>
+			    </div>
+			  </div>
+			</footer> -->
+			</div>
+
+	  </div>
+	  
+	  <script type="text/javascript" src="Sapa%20Muslim%20Admin%20%7C%20Host_files/vendor.js"></script>
+	  <script type="text/javascript" src="Sapa%20Muslim%20Admin%20%7C%20Host_files/app.js"></script>
+
+	
+
+
+</body></html>
