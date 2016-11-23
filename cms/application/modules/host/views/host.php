@@ -27,9 +27,9 @@
                                 <td><?=$key->type?></td>
                                 <td><?=($key->active == '0' ? '<span class="label label-default">InActive</span>' : '<span class="label label-info">Active</span>')?></td>
                                 <td>
-                                    <?=($key->active == '0' ? '<a href="'.base_url().'host/change_status/'.strEncrypt($key->host_id).'/1" class="btn btn-xs btn-default"><span class="fa fa-eye-slash"></span></a>' : '<a href="'.base_url().'host/change_status/'.strEncrypt($key->host_id).'/0" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>')?>
+                                    <?=($key->active == '0' ? '<a href="'.base_url().'host/change_status/'.strEncrypt($key->host_id).'/1" onclick="return f_status(1, this, event)" class="btn btn-xs btn-default"><span class="fa fa-eye-slash"></span></a>' : '<a href="'.base_url().'host/change_status/'.strEncrypt($key->host_id).'/0" onclick="return f_status(1, this, event)" class="btn btn-xs btn-info"><span class="fa fa-eye"></span></a>')?>
                                     <a href="<?=base_url()?>host/show_edit/<?=strEncrypt($key->host_id)?>" class="btn btn-xs btn-success"><span class="fa fa-edit"></span></a>
-                                    <a href="<?=base_url().'host/change_status/'.strEncrypt($key->host_id).'/99'?>" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                                    <a href="<?=base_url().'host/change_status/'.strEncrypt($key->host_id).'/99'?>" onclick="return f_status(2, this, event)" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
                                 </td>
                             </tr>
                             <?php $i++?>

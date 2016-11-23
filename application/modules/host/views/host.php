@@ -5,7 +5,28 @@
 				<div class="row">
 					<div class="col-md-7">
 						<div class="work-inner" style="padding: 10px">
-							<div style="width: 100%; height: 400px; background: #000"></div>
+							<object id="viewer" wmode="opaque" name="viewer" uname="<?php echo $record[0]->username ?>" type="application/x-shockwave-flash" data="<?php echo base_url('assets/swf/viewer.swf') ?>" width="100%" height="450">
+		                        <param name="movie" value="<?php echo base_url('assets/swf/viewer.swf') ?>"/>
+		                        <param name="quality" value="high"/>
+		                        <param name="allowscriptaccess" value="always"/>
+		                        <a href="http://www.adobe.com/go/getflash">
+		                            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
+		                        </a>
+		                    </object>
+		                    <script type="text/javascript">
+							window.onload = pageInit;
+							var streamApp ="<?php echo $record[0]->username ?>";
+							function pageInit(){
+								
+								setTimeout(function(){
+									jsReady = true;
+									if(typeof(document.getElementById("viewer").sendParameter)=='function'){
+										document.getElementById("viewer").sendParameter(streamURL, streamPort, streamApp, streamName, logoURL);
+									}
+									<?php if($record[0]->info_text) echo 'sendRunningText("'.$record[0]->info_text.'")'; ?>
+								}, 2000);
+							}
+							</script>
 							<div class="row" style="margin-top: 10px">
 								<div class="col-md-2 col-xs-4">
 									<img class="img-responsive" src="<?=base_url()?>assets/images/hosts/<?=$record[0]->photo?>" onerror="this.src='<?=base_url()?>assets/images/default_host.jpg'" alt="Image">

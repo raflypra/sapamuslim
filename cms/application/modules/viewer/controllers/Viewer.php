@@ -79,7 +79,7 @@ class Viewer extends CI_Controller {
             $str_replace        = ['<li>', '</li>'];
 
             $this->alert_flash('validation', 'Failed!', str_replace($str, $str_replace, validation_errors()), 'warning');
-            redirect( base_url().'host/show_add');
+            redirect( base_url().$this->prefix.'/show_add');
         }
 	}
 
@@ -130,7 +130,7 @@ class Viewer extends CI_Controller {
             $str_replace        = ['<li>', '</li>'];
 
             $this->alert_flash('validation', 'Failed!', str_replace($str, $str_replace, validation_errors()), 'warning');
-            redirect( base_url().'host/show_edit/'.$id);
+            redirect( base_url().$this->prefix.'/show_edit/'.$id);
         }
 	}
 
@@ -140,11 +140,13 @@ class Viewer extends CI_Controller {
 
         if ( $result )
         {
-            redirect(base_url().$this->prefix);
+            $data['status'] = 1;
 
         } else {
-
+        	$data['status'] = 0;
         }
+
+        echo json_encode($data);
     }
 
     public function alert_flash($name, $str_strong, $str_def, $color)

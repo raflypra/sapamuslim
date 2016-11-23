@@ -18,4 +18,10 @@ class Host extends CI_Controller {
 		$this->template->display('host', $data);
 	}
 
+	public function host_area($host_id)
+	{
+		$data['record'] = $this->m_global->get_data_all('host', null, ['host_id' => $host_id]);
+		$this->template->display('host_area', $data);
+	}
+
 }

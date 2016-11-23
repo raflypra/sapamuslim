@@ -80,7 +80,7 @@
 						<li><a class="<?=($this->uri->segment(1) == 'register' ? 'active':'')?>" href="#">Register</a></li> 
 						<li><a class="<?=($this->uri->segment(1) == 'login' ? 'active':'')?>" href="<?=base_url()?>login">Login</a></li>
 						<?php else: ?>
-						<li><a class="<?=($this->uri->segment(1) == 'host_area' ? 'active':'')?>" href="#">Host Area</a></li> 
+						<li><a class="<?=($this->uri->segment(1) == 'host' ? 'active':'')?>" href="<?=base_url()?>host/host_area/<?=$this->session->userdata(config_item('session_id'))->host_id?>">Host Area</a></li> 
 						<li><a class="<?=($this->uri->segment(1) == 'login' ? 'active':'')?>" href="<?=base_url()?>login/logout">Logout</a></li>
 						<?php endif;?>
 					</ul>
@@ -189,6 +189,7 @@
             /*responsive code end*/
         });
     </script>
+    <script src="<?=base_url()?>assets/js/page.js"></script>
 
 	</body>
 </html>

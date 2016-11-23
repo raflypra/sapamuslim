@@ -12,6 +12,7 @@
 	  	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/theme/blue.css">
 	  	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/theme/red.css">
 	  	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/theme/yellow.css">
+	  	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/sweetalert.css">
 	  	<link rel="shortcut icon" href="<?=base_url()?>assets/images/favicon.ico">
 
 	</head>
@@ -98,7 +99,7 @@
 			        </li>
 			        <li>
 			          <button type="button" class="navbar-toggle">
-			            <img class="profile-img" src="<?=base_url()?>assets/images/profile.png">
+			            <img class="profile-img" src="<?=base_url()?>assets/images/default_host.jpg">
 			          </button>
 			        </li>
 			      </ul>
@@ -108,7 +109,7 @@
 			      <ul class="nav navbar-nav navbar-right">
 			        <li class="dropdown profile">
 			          <a href="/html/pages/profile.html" class="dropdown-toggle"  data-toggle="dropdown">
-			            <img class="profile-img" src="<?=base_url()?>assets/images/default_profile.jpg">
+			            <img class="profile-img" src="<?=base_url()?>assets/images/default_host.jpg">
 			            <div class="title">Profile</div>
 			          </a>
 			          <div class="dropdown-menu">
@@ -145,6 +146,7 @@
 	  </div>
 	  
 	  <script type="text/javascript" src="<?=base_url()?>assets/js/vendor.js"></script>
+	  <script type="text/javascript" src="<?=base_url()?>assets/js/sweetalert.min.js"></script>
 	  <script type="text/javascript" src="<?=base_url()?>assets/js/app.js"></script>
 
 	</body>
